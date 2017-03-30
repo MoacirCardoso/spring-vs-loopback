@@ -1,0 +1,55 @@
+{
+  "name": "Post",
+  "plural": "post",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "required": true
+    },
+    "content": {
+      "type": "string",
+      "required": true
+    },
+    "createdAt": {
+      "type": "date",
+      "required": true
+    },
+    "updatedAt": {
+      "type": "date",
+      "required": true
+    },
+    "deleted": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    },
+    "author": {
+      "type": "string",
+      "required": true
+    },
+    "views": {
+      "type": "number",
+      "required": true,
+      "default": 0
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "source": {
+      "type": "string"
+    },
+    "tags": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

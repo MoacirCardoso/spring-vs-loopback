@@ -1,0 +1,15 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "postSchemaDS": {
+    "host": "localhost",
+    "port": 3306,
+    "database": "myblog_schema",
+    "username": "root",
+    "password": "root",
+    "name": "postSchemaDS",
+    "connector": "mysql"
+  }
+}
