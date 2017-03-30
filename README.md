@@ -12,3 +12,5 @@ virtualenv venv<br/>
 source venv/bin/activate<br/>
 pip install locustio<br/>
 pip install pyzmq<br/>
+<br/>
+Ex: locust -f locustfile.py --host=http://localhost:3000<br>
