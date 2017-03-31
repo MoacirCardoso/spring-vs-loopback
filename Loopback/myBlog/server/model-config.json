@@ -9,6 +9,7 @@
     "mixins": [
       "loopback/common/mixins",
       "loopback/server/mixins",
+      "loopback-cache/mixins",
       "../common/mixins",
       "./mixins"
     ]

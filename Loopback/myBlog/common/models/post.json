@@ -6,10 +6,14 @@
   "options": {
     "validateUpsert": true
   },
+  "mysql": {
+    "tableName": "post"
+  },
   "properties": {
     "id": {
       "type": "number",
-      "required": true
+      "id": true,
+      "generated": true
     },
     "content": {
       "type": "string",
@@ -17,15 +21,18 @@
     },
     "createdAt": {
       "type": "date",
-      "required": true
+      "mysql": {
+        "columnName": "created_at"
+      }
     },
     "updatedAt": {
       "type": "date",
-      "required": true
+      "mysql": {
+        "columnName": "updated_at"
+      }
     },
     "deleted": {
       "type": "boolean",
-      "required": true,
       "default": false
     },
     "author": {
